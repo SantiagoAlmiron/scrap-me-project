@@ -1,0 +1,31 @@
+es:
+  simple_form:
+    "yes": 'Sí'
+    "no": 'No'
+    required:
+      text: 'requerido'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="requerido">*</abbr>'
+    error_notification:
+      default_message: "Por favor, revise los problemas a continuación:"
+    # Examples
+    # labels:
+    #   defaults:
+    #     password: 'Contraseña'
+    #   user:
+    #     new:
+    #       email: 'Correo electrónico para iniciar sesión.'
+    #     edit:
+    #       email: 'Correo electrónico.'
+    # hints:
+    #   defaults:
+    #     username: 'Nombre de usuario para iniciar sesión.'
+    #     password: 'Sin caracteres especiales, por favor.'
+    # include_blanks:
+    #   defaults:
+    #     age: 'Prefiero no decirlo'
+    # prompts:
+    #   defaults:
+    #     age: 'Seleccione su edad'

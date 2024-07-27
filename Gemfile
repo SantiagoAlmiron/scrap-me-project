@@ -26,6 +26,10 @@ gem 'jbuilder'
 gem 'haml', '~> 6.3'
 # Set haml as default template engine.
 gem 'haml-rails', '~> 2.1'
+# Flexible authentication solution for Rails with Warden
+gem 'devise', '~> 4.9'
+# Forms made easy!
+gem 'simple_form', '~> 5.3', '>= 5.3.1'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
@@ -67,3 +71,4 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
 end
+
