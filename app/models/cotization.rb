@@ -9,7 +9,6 @@ class Cotization < ApplicationRecord
   private
 
   def set_cotized_at
-    binding.pry
     return unless cotized_at.nil?
 
     self.cotized_at = Time.current
