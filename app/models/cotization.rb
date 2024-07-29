@@ -4,11 +4,12 @@ class Cotization < ApplicationRecord
   belongs_to :economic_variable
   validates :value, presence: true
 
-  before_create :set_cotized_at
+  after_create :set_cotized_at
 
   private
 
   def set_cotized_at
+    binding.pry
     return unless cotized_at.nil?
 
     self.cotized_at = Time.current

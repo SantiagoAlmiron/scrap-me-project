@@ -1,0 +1,10 @@
+:concurrency: 5
+staging:
+  :concurrency: 10
+production:
+  :concurrency: 20
+  :logfile: ./log/sidekiq.log
+:queues:
+  - [cotizations, 3]
+  - [default, 2]
+  - [mailers, 1]

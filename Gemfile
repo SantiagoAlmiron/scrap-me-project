@@ -34,6 +34,10 @@ gem 'nokogiri', '~> 1.16', '>= 1.16.7'
 gem 'httparty', '~> 0.22.0'
 # Forms made easy!
 gem 'simple_form', '~> 5.3', '>= 5.3.1'
+# Simple, efficient background processing for Ruby.
+gem 'sidekiq', '~> 7.3'
+# A Ruby client that tries to match Redis' API one-to-one, while still providing an idiomatic interface.
+gem 'redis', '~> 5.2'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
@@ -57,6 +61,8 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri windows]
   gem 'pry-byebug', '~> 3.10', '>= 3.10.1'
+  # Loads environment variables from `.env`.
+  gem 'dotenv', '~> 3.1', '>= 3.1.2'
 end
 
 group :development do
