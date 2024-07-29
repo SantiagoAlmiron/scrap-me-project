@@ -16,3 +16,11 @@ Style/Documentation:
 Metrics/BlockLength:
   Exclude:
     - 'config/environments/development.rb'
+
+Metrics/MethodLength:
+  Max: 20
+
+Layout/LineLength:
+  Exclude:
+    - 'config/initializers/devise.rb'
+    - 'config/initializers/simple_form.rb'

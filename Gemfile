@@ -28,8 +28,13 @@ gem 'haml', '~> 6.3'
 gem 'haml-rails', '~> 2.1'
 # Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 4.9'
+# Nokogiri (鋸) makes it easy and painless to work with XML and HTML from Ruby
+gem 'nokogiri', '~> 1.16', '>= 1.16.7'
+# Makes http fun! Also, makes consuming restful web services dead easy.
+gem 'httparty', '~> 0.22.0'
 # Forms made easy!
 gem 'simple_form', '~> 5.3', '>= 5.3.1'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
@@ -51,6 +56,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 6.1', '>= 6.1.3'
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri windows]
+  gem 'pry-byebug', '~> 3.10', '>= 3.10.1'
 end
 
 group :development do
@@ -71,4 +77,3 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
 end
-

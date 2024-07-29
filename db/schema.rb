@@ -18,6 +18,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_07_27_214716) do
     t.decimal "value", precision: 10, scale: 2
     t.bigint "economic_variable_id", null: false
     t.datetime "created_at", null: false
+    t.datetime "cotized_at", null: false
     t.index ["economic_variable_id"], name: "index_cotizations_on_economic_variable_id"
   end
 
